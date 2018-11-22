@@ -160,7 +160,17 @@ main {
     }
 }
 
+//contact boxes
+.boxes {
+    margin: 70px 0;
+    position: relative;
+        
 
+}
+.light-box { background-color: darken($primary-color, 10); box-shadow: 0px 3px 0px 0px $secondary-color; padding: 20px 20px; }
+.light-box:hover, .light-box:focus {box-shadow: 0px 3px 0px 0px $secondary-color; }
+.box-hover { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
+.box-hover:hover, .box-hover:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -ms-transform: translate(0, -15px); }
 
 
 #main-footer {

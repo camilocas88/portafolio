@@ -212,6 +212,29 @@ main {
     display: inline-block;
     justify-content: center; }
 
+.boxes {
+  margin: 70px 0;
+  position: relative; }
+
+.light-box {
+  background-color: #2b2b2b;
+  box-shadow: 0px 3px 0px 0px #eece1a;
+  padding: 20px 20px; }
+
+.light-box:hover, .light-box:focus {
+  box-shadow: 0px 3px 0px 0px #eece1a; }
+
+.box-hover {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out; }
+
+.box-hover:hover, .box-hover:focus {
+  transform: translate(0, -15px);
+  -webkit-transform: translate(0, -15px);
+  -ms-transform: translate(0, -15px); }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
