@@ -110,6 +110,59 @@ main {
     }
 }
 
+//Work/ projects
+.post-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	grid-gap: 0.7rem;
+	transform: perspective()
+}
+
+.post{
+    cursor: pointer;
+	position: relative;       
+    display: block;
+    
+    &-image {
+        margin: 0;
+
+        img{
+            width: 100%;
+            vertical-align: center;
+        }
+    }
+
+    &-overlay {
+        background: rgba(0, 0, 0, .4);
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 97%;
+        width: 100%;
+        opacity: 0;
+        @include easeOut;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &-likes {
+        width: 97%;
+        margin: 5px; 
+        display: inline-block;
+        justify-content: center;
+    }
+}
+
+
+
+
 #main-footer {
     text-align: center;
     padding: 1rem;
