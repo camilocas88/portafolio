@@ -213,13 +213,18 @@ main {
     justify-content: center; }
 
 .boxes {
-  margin: 70px 0;
-  position: relative; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
 
 .light-box {
+  font-size: 2rem;
   background-color: #2b2b2b;
   box-shadow: 0px 3px 0px 0px #eece1a;
-  padding: 20px 20px; }
+  padding: 20px 20px;
+  margin-bottom: 3rem; }
 
 .light-box:hover, .light-box:focus {
   box-shadow: 0px 3px 0px 0px #eece1a; }
